@@ -138,7 +138,7 @@ const resolveOptions = (options) => {
 // 导出函数
 const table2excel = (...options) => {
 	function getTextHtml(val) {
-		return `<td style="text-align: center">${val}</td>`
+		return `<td style="text-align: center;vnd.ms-excel.numberformat:@">${val}</td>`
 	}
 
 	function getImageHtml(val, options) {
